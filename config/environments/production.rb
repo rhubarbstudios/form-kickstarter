@@ -63,7 +63,7 @@ Prelaunchr::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  config.action_mailer.default_url_options = { :host => 'www.steamd.com' }
+  config.action_mailer.default_url_options = { :host => 'www.formlisting.com' }
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
@@ -72,7 +72,7 @@ Prelaunchr::Application.configure do
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV['SENDGRID_USER'],
     :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'steamd.com',
+    :domain => 'formlisting.com',
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
