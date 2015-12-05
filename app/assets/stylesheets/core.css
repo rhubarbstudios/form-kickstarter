@@ -35,7 +35,9 @@ html.home{
 }
 
 #home{
-	padding-bottom: 50px;
+	background: url('https://s3.amazonaws.com/formlifting-kickstarter/images/form-hero.png') center 10% no-repeat;
+	background-size: cover;
+	height: 100vh;
 }
 
 #home .page-content{
@@ -45,9 +47,7 @@ html.home{
 
 #home .hero{
 	width: 100%;
-	height: 446px;
-	background: url(/assets/home/hero.jpg) center center no-repeat;
-	background-size: 1600px 446px;
+	height: 80vh;
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
@@ -56,27 +56,23 @@ html.home{
 
 #home .hero .large{
 	font-weight: bold;
-	font-size: 40px;
-	color: #074E6F;
-	text-transform: uppercase;
-	margin: 85px 0 0 136px;
-	position: relative;
-	z-index: 2;
-	letter-spacing: 2px;
+  font-size: 68px;
+  color: #fff;
+  z-index: 2;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 56vh;
 }
 
 #home .hero .small{
-	font-weight: bold;
-	color: #955F5D;
-	font-size: 18px;
-	margin: 10px 0 0 115px;
-	line-height: 30px;
-	position: relative;
-	z-index: 2;
-	text-transform: uppercase;
-	text-align: center;
-	width: 375px;
-	letter-spacing: 1px;
+	color: #fff;
+  font-size: 24px;
+  margin: 0 auto;
+  line-height: 30px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 764px;
 }
 
 #home .form-wrap{
@@ -94,36 +90,35 @@ html.home{
 }
 
 #home .form-wrap .byline{
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #074E6F;
+	font-size: 24px;
+	color: #fff;
 	text-align: center;
-	font-weight: bold;
 	letter-spacing: 2px;
 	margin: 15px 0;
 }
 
 #home .form-wrap .email{
 	float: left;
-	font-size: 13px;
+	font-size: 20px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
-	width: 256px;
+	border: none;
+	width: 258px;
 	outline: none;
+	height: 29px;
 	letter-spacing: 1px;
 }
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: #074E6F;
+	background: rgb(80,179,211);
 	float: left;
-	height: 37px;
+	height: 45px;
 	line-height: 37px;
-	color: #FFF;
-	font-size: 13px;
-	text-transform: uppercase;
+	color: #000;
+	font-size: 28px;
 	border: 0;
-	letter-spacing: 2px;
+	margin-bottom: 28px;
+	text-transform: uppercase;
 }
 
 #home .form-wrap.ended{
@@ -132,9 +127,8 @@ html.home{
 }
 
 #home .form-wrap.ended .thanks{
-	text-transform: uppercase;
 	font-weight: 500;
-	color: #074e6f;
+	color: rgb(80,179,211);
 	text-align: center;
 	font-size: 22px;
 	letter-spacing: 1px;
@@ -143,7 +137,6 @@ html.home{
 }
 
 #home .form-wrap.ended .compiling{
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 14px;
 	line-height: 30px;
@@ -162,10 +155,9 @@ html.home{
 }
 
 #home .form-wrap.ended .go-to a{
-	color: #074e6f;
+	color: rgb(80,179,211);
 	font-size: 19px;
 	font-weight:bold;
-	text-transform: uppercase;
 	font-style: normal;
 	text-decoration: none;
 }
@@ -177,7 +169,6 @@ html.home{
 #home .form-wrap.ended .again{
 	font-weight: 500;
 	color: #555556;
-	text-transform: uppercase;
 	font-size: 14px;
 	text-align: center;
 }
@@ -188,9 +179,8 @@ html.home{
 }
 
 #home .form-wrap.ended .thanks{
-	text-transform: uppercase;
 	font-weight: 500;
-	color: #074e6f;
+	color: rgb(80,179,211);
 	text-align: center;
 	font-size: 22px;
 	letter-spacing: 1px;
@@ -199,7 +189,6 @@ html.home{
 }
 
 #home .form-wrap.ended .compiling{
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 14px;
 	line-height: 30px;
@@ -218,10 +207,9 @@ html.home{
 }
 
 #home .form-wrap.ended .go-to a{
-	color: #074e6f;
+	color: rgb(80,179,211);
 	font-size: 19px;
 	font-weight:bold;
-	text-transform: uppercase;
 	font-style: normal;
 	text-decoration: none;
 }
@@ -233,11 +221,10 @@ html.home{
 #home .form-wrap.ended .again{
 	font-weight: 500;
 	color: #555556;
-	text-transform: uppercase;
 	font-size: 14px;
 	text-align: center;
 }
- 
+
 
 
 /* Refer a friend page */
@@ -263,7 +250,7 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: rgb(80,179,211);
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -276,15 +263,15 @@ html.home{
 }
 
 #refer .header p{
-	float: left;
 	color: #FFF;
 	font-weight: 500;
-	text-transform: uppercase;
 	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
 }
 
 #refer .header .byline{
-	font-size: 14px;
+	font-size: 24px;
 }
 
 #refer .header .logo{
@@ -306,20 +293,19 @@ html.home{
 	overflow: hidden;
 }
 
-#refer .mammoth{
-	width: 612px;
+#refer .collar{
+	width: 300px;
 	height: 394px;
-	background: url(/assets/refer/mammoth.png) 0 0 no-repeat;
-	background-size: 610px 394px;
+	background: url('https://s3.amazonaws.com/formlifting-kickstarter/images/form-collar.png') center 60% no-repeat;
+	background-size: 480px;
 	overflow: hidden;
 	margin-top: 15px;
-	float: left;
+	float: right;
 }
 
-#refer .mammoth .need{
+#refer .collar .need{
 	color: #FFF;
 	font-size: 38px;
-	text-transform: uppercase;
 	font-weight: bold;
 	margin: 102px 0 0 72px;
 	display: block;
@@ -330,34 +316,31 @@ html.home{
 }
 
 #refer .share-wrap{
-	float: right;
-	width: 400px;
+	float: left;
+	width: 760px;
 	text-align: center;
-	text-transform: uppercase;
 	letter-spacing: .13em;
 	margin-right: 60px;
 }
 
 #refer .share-wrap .why{
-	font-size: 16px;
+	font-size: 28px;
 	color: #555556;
-	font-weight: bold;
 	margin-top: 42px;
 }
 
 #refer .share-wrap .title{
-	font-size: 30px;
+	font-size: 42px;
 	line-height: 40px;
-	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: rgb(80,179,211);
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
 
 #refer .share-wrap .subtitle{
 	color: #565656;
-	font-size: 14px;
+	font-size: 22px;
 	text-transform: none;
 	margin-top: 15px;
 }
@@ -365,11 +348,13 @@ html.home{
 #refer .share-wrap .copy-link{
 	border: 1px solid #D1D0C7;
 	background: #FFF;
-	padding: 10px 0;
-	width: 320px;
+	padding: 12px 0;
+	width: 375px;
 	text-transform: none;
-	font-size: 11px;
+	font-size: 14px;
 	margin: 20px auto 0;
+	height: 22px;
+	line-height: 22px;
 }
 
 #refer .share-wrap .social-links{
@@ -406,8 +391,8 @@ html.home{
 
 #refer .prizes{
 	width: 100%;
-	background: #FFF;
-	border-top: 1px solid #D2D1C8;
+	background: #F1F0EE;
+	border-top: 1px solid #F1F0EE;
 	padding-bottom: 100px;
 }
 
@@ -417,12 +402,19 @@ html.home{
 
 #refer .prizes .callout{
 	text-align: center;
-	font-size: 16px;
-	color: #074E6F;
+	font-size: 30px;
+	color: rgb(80,179,211);
 	font-weight: bold;
 	margin: 20px 0 0 0;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+}
+
+#refer .prizes .callout-subtitle{
+	text-align: center;
+	font-size: 18px;
+	color: #565656;
+	margin: 20px 0 0 0;
+	letter-spacing: 2px;
 }
 
 #refer .prizes .progress{
@@ -431,7 +423,7 @@ html.home{
 	background: url(/assets/refer/progress-bg.png) 0 0 repeat-x;
 	background-size: 1px 4px;
 	position: absolute;
-	top: 100px;
+	top: 152px;
 	z-index: 0;
 }
 
@@ -442,7 +434,7 @@ html.home{
 }
 
 #refer .prizes .progress .mover .bar{
-	background: url(/assets/refer/progress-done.png) 0 0 repeat-x;
+	background: rgb(193,39,45) 0 0 repeat-x;
 	width: 165px;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
@@ -465,12 +457,11 @@ html.home{
 
 #refer .prizes .products li.title{
 	height: 100%;
-	text-transform: uppercase;
-	color: #074E6F;
+	color: rgb(80,179,211);
 	font-weight: 500;
 	font-size: 14px;
 	float: left;
-	margin-right: 68px;
+	margin-right: 100px;
 	width: 165px;
 	font-weight: bold;
 }
@@ -487,9 +478,9 @@ html.home{
 
 #refer .prizes .products li.product{
 	height: 100%;
-	color: #074E6F;
-	width: 125px;
-	margin-right: 129px;
+	color: rgb(80,179,211);
+	width: 173px;
+	margin-right: 168px;
 	float: left;
 	position: relative;
 }
@@ -503,7 +494,7 @@ html.home{
 	line-height: 30px;
 	color: #868282;
 	overflow: hidden;
-	background: #F1F0EE;
+	background: #fff;
 	font-weight: bold;
 	margin: 0 auto;
 }
@@ -543,26 +534,26 @@ html.home{
 }
 
 #refer .prizes .products li.product.selected .circle{
-	background: #995F5E !important;
-	border-color: #995F5E !important;
+	background: rgb(193,39,45) !important;
+	border-color: rgb(193,39,45) !important;
 	color: #FFF !important;
 }
 
 
 #refer .prizes .products li.product.selected p{
-	color: #995F5E !important;
+	color: rgb(193,39,45) !important;
 }
 
 #refer .prizes .products li.product:hover .circle{
 	color: #FFF;
-	background: #074E6F;
-	border-color: #074E6F;
+	background: rgb(80,179,211);
+	border-color: rgb(80,179,211);
 }
 
 #refer .prizes .products li.product .tooltip{
 	height: 254px;
 	width: 190px;
-	border: 4px solid #074E6F;
+	border: 4px solid rgb(80,179,211);
 	position: absolute;
 	top: -285px;
 	left: -32px;
@@ -570,26 +561,27 @@ html.home{
 	background: #FFF;
 }
 
-#refer .prizes .products li.product .tooltip img{
+/*#refer .prizes .products li.product .tooltip img{
 	margin: 0 auto;
 	display: block;
 }
 
 #refer .prizes .products li.product:hover .tooltip{
 	display: block;
-}
+}*/
 
 #refer .prizes p.place{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: rgb(80,179,211);
 	width: 100%;
 	font-weight: 500;
 	margin-top: 30px;
 }
 
 #refer .prizes p.place span{
-	color: #995F5E;
+	color: rgb(193,39,45);
+	font-weight: bold;
 }
 
 #refer .prizes p.check{
@@ -630,10 +622,10 @@ html.home{
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
-	#home .hero{
+/*	#home .hero{
 		background: url(/assets/home/hero@2x.jpg) center center no-repeat;
 		background-size: 1600px 446px;
-	}
+	}*/
 
 	#home .form-wrap .key{
 		background: url(/assets/home/key@2x.png) 0 0 no-repeat;
@@ -645,9 +637,9 @@ only screen and (min-device-pixel-ratio: 2) {
 		background-size: 106px 19px;
 	}
 
-	#refer .mammoth{
-		background: url(/assets/refer/mammoth@2x.png) 0 0 no-repeat;
-		background-size: 610px 394px;
+	#refer .collar{
+		background: url('https://s3.amazonaws.com/formlifting-kickstarter/images/form-collar.png') center 60% no-repeat;
+		background-size: 480px;
 	}
 
 	#refer .share-wrap .social-links .fb{
@@ -666,7 +658,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .prizes .progress .mover .bar{
-		background: url(/assets/refer/progress-done@2x.png) 0 0 repeat-x;
+		background: rgb(193,39,45) 0 0 repeat-x;
 		background-size: 1px 4px;
 	}
 
