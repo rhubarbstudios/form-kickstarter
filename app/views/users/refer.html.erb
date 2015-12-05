@@ -22,7 +22,7 @@
     </div>
 </div>
 
-<% 
+<%
     referrals_count = @user.referrals.count
 
     stops = User::REFERRAL_STEPS
@@ -36,7 +36,7 @@
         else
             stop["selected"] = false
         end
-    }   
+    }
  %>
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
     <div class="page-content">

@@ -441,10 +441,10 @@ html.home{
 	background-size: 1px 4px;
 }
 
-#refer .prize-two .progress .mover .bar{ width: 312px; }
-#refer .prize-three .progress .mover .bar{ width: 566px; }
-#refer .prize-four .progress .mover .bar{ width: 820px; }
-#refer .prize-five .progress .mover .bar{ width: 1120px; }
+#refer .prize-two .progress .mover .bar{ width: 352px; }
+#refer .prize-three .progress .mover .bar{ width: 694px; }
+#refer .prize-four .progress .mover .bar{ width: 1120px; }
+/*#refer .prize-five .progress .mover .bar{ width: 1120px; }*/
 
 
 #refer .prizes ul.products{
