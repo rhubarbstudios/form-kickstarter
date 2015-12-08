@@ -78,9 +78,10 @@
         <% else %>
             <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
         <% end %>
+            <p class="place brandon">You are ranked number <span><%= @rank %></span> out of <%= User.count %>.</p>
         <!-- <p class="check brandon">Keep checking</p> -->
 
-        <!-- <p class="ship brandon">We ship to the U.S. (& Canada Soon)</p>        
+        <!-- <p class="ship brandon">We ship to the U.S. (& Canada Soon)</p>
         <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a> -->
     </div>
 </div>
