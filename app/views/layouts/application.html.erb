@@ -9,17 +9,18 @@
         <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
         <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
 
+        <meta name="viewport" content="width=device-width">
         <meta property="og:title" content="Lift Smarter. Lift Safer."/>
         <meta property="og:description" content="FORM will revolutionize the way you lift with game-changing, real-time metrics for every rep in every workout."/>
         <meta property="og:image" content="https://s3.amazonaws.com/formlifting-kickstarter/images/form-hero.png"/>
         <meta property="og:url" content="kickstarter.formlifting.com"/>
-        <% if @is_mobile %>
-            <% if @bodyId == 'home' %>
-                <meta name="viewport" content="width=1600" />
-            <% else %>
-                <meta name="viewport" content="width=1120" />
-            <% end %>
-        <% end %>
+        <%# if @is_mobile %>
+            <%# if @bodyId == 'home' %>
+                <!-- <meta name="viewport" content="width=1600" /> -->
+            <%# else %>
+                <!-- <meta name="viewport" content="width=1120" /> -->
+            <%# end %>
+        <%# end %>
         <%= stylesheet_link_tag "core.css", :media => "all" %>
         <%= csrf_meta_tags %>
 </head>

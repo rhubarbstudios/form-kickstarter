@@ -6,7 +6,6 @@
 
 <div class="hero">
     <div class="page-content clearfix">
-        <div class="collar"></div>
         <div class="share-wrap">
             <p class="why brandon">Don't leave your friends behind...</p>
             <p class="title brandon">Invite friends. Earn rewards.</p>
@@ -43,7 +42,7 @@
         <p class="callout brandon">Our Top 10 referral sources win a FREE FORM collar</p>
         <p class="callout-subtitle brandon">Here's what you get:</p>
         <ul class="products clearfix">
-            <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">You Earn</p></li>
+            <li class="title brandon"><p class="friends">Friends Joined: <span><%= referrals_count %></span></p><p class="rewards">You Earn</p></li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'four' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>

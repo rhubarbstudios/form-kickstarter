@@ -1,19 +1,51 @@
-<div class="hero">
-    <p class="large brandon">Lift smarter. Lift safer.</p>
-    <p class="small brandon">FORM will revolutionize the way you lift with game-changing, real-time metrics for every rep in every workout.</p>
+<div id="splash">
+
+    <div class="hero">
+        <img class="logo" src="https://s3.amazonaws.com/formlifting-kickstarter/images/form-logo.png" alt="form logo">
+        <p class="large brandon">Lift smarter.</p>
+        <p class="small brandon">FORM will revolutionize the way you lift with game-changing, real-time metrics for every rep in every workout.</p>
+    </div>
+
+    <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+        <% if Rails.application.config.ended %>
+            <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
+            <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
+            <p class="go-to brandon">In the meantime, head to  <a href="http://www.formlifting.com/">www.formlifting.com</a></p>
+            <p class="again brandon">Thank You Again!</p>
+        <% else %>
+            <%= form_for @user, :url => { :action => "create" } do |f| %>
+                <%= f.text_field :email, :placeholder => "Your Email", :class => "email brandon" %>
+                <input class="submit brandon" name="commit" type="submit" value="I'M IN!" />
+            <% end %>
+            <p class="byline brandon">Be first to know!</p>
+        <% end %>
+    </div>
+
 </div>
 
-<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
-    <% if Rails.application.config.ended %>
-        <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
-        <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
-        <p class="go-to brandon">In the meantime, head to  <a href="http://www.formlifting.com/">www.formlifting.com</a></p>
-        <p class="again brandon">Thank You Again!</p>
-    <% else %>
-        <%= form_for @user, :url => { :action => "create" } do |f| %>
-            <%= f.text_field :email, :placeholder => "Your Email", :class => "email brandon" %>
-            <input class="submit brandon" name="commit" type="submit" value="I'M IN!" />
-        <% end %>
-        <p class="byline brandon">Be first to know!</p>
-    <% end %>
+<div class="content-wrapper">
+    <div class="value-prop-wrapper">
+        <img src="https://s3.amazonaws.com/formlifting-kickstarter/images/form-collar.png" alt="form-collar">
+        <div class="value-prop brandon">
+            <h2>No strings attached</h2>
+            <p>With its advanced sensors, the From barbell collar measures your form and performance in real-time</p>
+        </div>
+    </div>
+
+    <div class="value-prop-wrapper">
+        <img src="https://s3.amazonaws.com/formlifting-kickstarter/images/form-iphone.png" alt="">
+        <div class="value-prop brandon">
+            <h2>What's your hip drive?</h2>
+            <p>With simple metrics and intuitive graphics, the Form app will change the way you think about weightlifting.</p>
+        </div>
+    </div>
+
+    <div class="value-prop-wrapper">
+        <img src="https://s3.amazonaws.com/formlifting-kickstarter/images/form-women.png" alt="">
+        <div class="value-prop brandon">
+            <h2>Dare to compare.</h2>
+            <p>Form creates competitive metrics and a whole new vocabulary that takes weightlifting above and beyond the one rep max.</p>
+        </div>
+    </div>
+
 </div>

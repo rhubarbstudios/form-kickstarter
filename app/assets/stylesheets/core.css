@@ -34,10 +34,14 @@ html.home{
 	background: #EDECEA;
 }
 
-#home{
+#splash {
 	background: url('https://s3.amazonaws.com/formlifting-kickstarter/images/form-hero.png') center 10% no-repeat;
 	background-size: cover;
 	height: 100vh;
+}
+
+#home{
+	
 }
 
 #home .page-content{
@@ -61,7 +65,7 @@ html.home{
   z-index: 2;
   letter-spacing: 2px;
   text-align: center;
-  margin-top: 56vh;
+  margin-top: 30vh;
 }
 
 #home .hero .small{
@@ -73,6 +77,11 @@ html.home{
   z-index: 2;
   text-align: center;
   width: 764px;
+}
+
+#home .hero .logo {
+	margin: 20px 0 0 80px;
+	width: 180px;
 }
 
 #home .form-wrap{
@@ -110,11 +119,11 @@ html.home{
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: rgb(80,179,211);
+	background: #A82E36;
 	float: left;
 	height: 45px;
 	line-height: 37px;
-	color: #000;
+	color: #fff;
 	font-size: 28px;
 	border: 0;
 	margin-bottom: 28px;
@@ -128,7 +137,7 @@ html.home{
 
 #home .form-wrap.ended .thanks{
 	font-weight: 500;
-	color: rgb(80,179,211);
+	color: #A82E36;
 	text-align: center;
 	font-size: 22px;
 	letter-spacing: 1px;
@@ -155,7 +164,7 @@ html.home{
 }
 
 #home .form-wrap.ended .go-to a{
-	color: rgb(80,179,211);
+	color: #A82E36;
 	font-size: 19px;
 	font-weight:bold;
 	font-style: normal;
@@ -180,7 +189,7 @@ html.home{
 
 #home .form-wrap.ended .thanks{
 	font-weight: 500;
-	color: rgb(80,179,211);
+	color: #A82E36;
 	text-align: center;
 	font-size: 22px;
 	letter-spacing: 1px;
@@ -207,7 +216,7 @@ html.home{
 }
 
 #home .form-wrap.ended .go-to a{
-	color: rgb(80,179,211);
+	color: #A82E36;
 	font-size: 19px;
 	font-weight:bold;
 	font-style: normal;
@@ -224,6 +233,125 @@ html.home{
 	font-size: 14px;
 	text-align: center;
 }
+
+#home .content-wrapper {
+	/*margin: 100px 15%;*/
+	width: 800px;
+	margin: 100px auto;
+}
+
+#home .content-wrapper h2 {
+	font-size: 48px;
+	color: #A82E36;
+	margin-bottom: 18px;
+}
+
+#home .content-wrapper .value-prop-wrapper {
+	min-height: 214px;
+	margin: 60px 0;
+	font-size: 24px;
+}
+
+#home .content-wrapper .value-prop-wrapper:first-of-type img {
+	width: 180px;
+	float: right;
+}
+
+#home .content-wrapper .value-prop-wrapper:first-of-type .value-prop {
+	float: left;
+	width: 422px;
+	margin-top: 22px;
+}
+
+#home .content-wrapper .value-prop-wrapper:nth-of-type(2) img {
+	height: 300px;
+}
+
+#home .content-wrapper .value-prop-wrapper:nth-of-type(2) .value-prop {
+	float: right;
+	width: 482px;
+	margin-top: 66px;
+}
+
+#home .content-wrapper .value-prop-wrapper:nth-of-type(3) img {
+	width: 250px;
+	float: right;
+	margin-top: 28px;
+}
+
+#home .content-wrapper .value-prop-wrapper:nth-of-type(3) .value-prop {
+	float: left;
+	width: 376px;
+}
+
+@media screen and (max-width: 850px) {
+	#home .hero {
+		height: 66vh;
+	}
+
+	#home .hero .logo {
+	  width: 16vh;
+	  margin: 20px;
+	}
+	#home .hero .large {
+	  font-size: 10vw;
+	  margin-top: 24vh;
+	}
+	#home .hero .small {
+		font-size: 14px;
+		line-height: 20px;
+		width: initial;
+	}
+
+	#home .form-wrap {
+		width: initial;
+	}
+
+	#home .form-wrap .email {
+	  width: 70%;
+		margin-left: 1.5%;
+	}
+
+	#home .form-wrap .submit {
+		width: 25%;
+		font-size: 20px;
+	}
+
+	#home .content-wrapper {
+    width: 100%;
+    margin: 70px auto;
+    text-align: center;
+	}
+
+	#home .content-wrapper .value-prop-wrapper:first-of-type img {
+	    width: 180px;
+	    float: none;
+	    display: block;
+	    margin: 0 auto;
+	}
+
+	#home .content-wrapper .value-prop-wrapper .value-prop {
+	    float: none !important;
+	    width: 100% !important;
+	    margin-top: 22px !important;
+	}
+
+	#home .content-wrapper .value-prop-wrapper {
+	  font-size: 14px;
+	}
+
+	#home .content-wrapper h2 {
+	  font-size: 24px;
+	}
+
+	#home .content-wrapper .value-prop-wrapper:nth-of-type(3) img {
+	  float: none;
+	}
+
+
+}
+
+
 
 
 
@@ -250,7 +378,7 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: rgb(80,179,211);
+	background: #A82E36;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -316,11 +444,11 @@ html.home{
 }
 
 #refer .share-wrap{
-	float: left;
-	width: 760px;
+	/*float: left;
+	width: 760px;*/
 	text-align: center;
 	letter-spacing: .13em;
-	margin-right: 60px;
+	/*margin-right: 60px;*/
 }
 
 #refer .share-wrap .why{
@@ -333,7 +461,7 @@ html.home{
 	font-size: 42px;
 	line-height: 40px;
 	font-weight: bold;
-	color: rgb(80,179,211);
+	color: #A82E36;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
@@ -403,7 +531,7 @@ html.home{
 #refer .prizes .callout{
 	text-align: center;
 	font-size: 30px;
-	color: rgb(80,179,211);
+	color: #A82E36;
 	font-weight: bold;
 	margin: 20px 0 0 0;
 	letter-spacing: 2px;
@@ -457,7 +585,7 @@ html.home{
 
 #refer .prizes .products li.title{
 	height: 100%;
-	color: rgb(80,179,211);
+	color: #565656;
 	font-weight: 500;
 	font-size: 14px;
 	float: left;
@@ -471,6 +599,10 @@ html.home{
 	letter-spacing: 2px;
 }
 
+#refer .prizes .products li.title .friends span {
+	color: #A82E36;
+}
+
 #refer .prizes .products li.title .rewards{
 	margin-top: 45px;
 	letter-spacing: 2px;
@@ -478,7 +610,7 @@ html.home{
 
 #refer .prizes .products li.product{
 	height: 100%;
-	color: rgb(80,179,211);
+	color: #565656;
 	width: 173px;
 	margin-right: 168px;
 	float: left;
@@ -546,14 +678,14 @@ html.home{
 
 #refer .prizes .products li.product:hover .circle{
 	color: #FFF;
-	background: rgb(80,179,211);
-	border-color: rgb(80,179,211);
+	background: #A82E36;
+	border-color: #A82E36;
 }
 
 #refer .prizes .products li.product .tooltip{
 	height: 254px;
 	width: 190px;
-	border: 4px solid rgb(80,179,211);
+	border: 4px solid #A82E36;
 	position: absolute;
 	top: -285px;
 	left: -32px;
@@ -573,7 +705,7 @@ html.home{
 #refer .prizes p.place{
 	text-align: center;
 	font-size: 16px;
-	color: rgb(80,179,211);
+	color: #565656;
 	width: 100%;
 	font-weight: 500;
 	margin-top: 30px;
@@ -611,6 +743,34 @@ html.home{
 	margin-top: 5px;
 	display: block;
 	text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+
+	#refer .share-wrap .why {
+	  font-size: 18px;
+	}
+
+	#refer .share-wrap .title {
+	  font-size: 34px;
+	}
+
+	#refer .share-wrap .subtitle {
+		font-size: 12px;
+	}
+
+	#refer .prizes .products li.title:first-of-type {
+		display: none;
+	}
+
+	#refer .prizes .products li.title {
+		height: initial;
+	}
+
+	#refer .prizes .products li.product {
+	  margin-bottom: 36px;
+	}
+
 }
 
 
