@@ -477,7 +477,7 @@ html.home{
 	border: 1px solid #D1D0C7;
 	background: #FFF;
 	padding: 12px 0;
-	width: 375px;
+	width: 470px;
 	text-transform: none;
 	font-size: 14px;
 	margin: 20px auto 0;
@@ -769,6 +769,31 @@ html.home{
 
 	#refer .prizes .products li.product {
 	  margin-bottom: 36px;
+	}
+
+	#refer .share-wrap .copy-link{
+		width: 80%;
+		height: 46px;
+	}
+
+	#refer .page-content {
+		width: 100%;
+	}
+
+	#refer .prizes .page-content {
+		width: 100%;
+	}
+
+	#refer .prizes .callout-subtitle{
+		display: none;
+	}
+
+	#refer .prizes .progress{
+		display: none;
+	}
+
+	#refer .prizes .products {
+		display: none;
 	}
 
 }
