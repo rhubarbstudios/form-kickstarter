@@ -11,7 +11,7 @@
             <p class="title brandon">Invite friends. Earn rewards.</p>
             <p class="subtitle brandon">Share your unique link via email,<br>Facebook or Twitter and earn free stuff<br>for each friend who signs up.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "What's your hip drive? #FormLifting @FormLifting" %>
+            <% twitter_message = "What's your hip drive? #FormLifting #whatsyourhipdrive @FormLifting" %>
             <div class="social-links">
                 <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
                 <div class="sep"></div>
