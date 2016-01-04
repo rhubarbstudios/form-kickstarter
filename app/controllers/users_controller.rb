@@ -18,15 +18,18 @@ class UsersController < ApplicationController
 
         # If user doesnt exist, make them, and attach referrer
         if @user.nil?
-
-            cur_ip = IpAddress.find_by_address(request.env['HTTP_X_FORWARDED_FOR'])
+            user_ip = request.env['HTTP_X_FORWARDED_FOR']
+            cur_ip = IpAddress.find_by_address(user_ip)
 
             if !cur_ip
                 cur_ip = IpAddress.create(
-                    :address => request.env['HTTP_X_FORWARDED_FOR'],
+                    :address => user_ip,
                     :count => 0
                 )
             end
+
+            puts "CURRENT IP:"
+            puts user_ip
 
             if cur_ip.count > 2
                 return redirect_to root_path
@@ -35,7 +38,7 @@ class UsersController < ApplicationController
                 cur_ip.save
             end
 
-            @user = User.new(:email => params[:user][:email])
+            @user = User.new(:email => params[:user][:email], :ip_address => user_ip)
 
             @referred_by = User.find_by_referral_code(cookies[:h_ref])
 
