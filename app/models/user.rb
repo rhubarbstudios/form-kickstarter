@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
     belongs_to :referrer, :class_name => "User", :foreign_key => "referrer_id", counter_cache: :referrals_count
     has_many :referrals, :class_name => "User", :foreign_key => "referrer_id"
 
-    attr_accessible :email, :ip_address
+    attr_accessible :email, :ip_address, :location_details
 
     validates :email, :uniqueness => true, :format => { :with => /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/i, :message => "Invalid email format." }
     validates :referral_code, :uniqueness => true
