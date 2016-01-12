@@ -11,6 +11,8 @@ gem 'pg'
 
 gem 'activeadmin'
 
+gem 'rack-cors', :require => 'rack/cors'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

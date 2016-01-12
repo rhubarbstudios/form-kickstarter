@@ -62,5 +62,14 @@ module Prelaunchr
     config.assets.version = '1.0'
 
     config.ended = false
+
+
+    config.middleware.insert_before 0, "Rack::Cors" do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :options]
+      end
+    end
+
   end
 end
