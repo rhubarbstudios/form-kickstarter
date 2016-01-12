@@ -1,5 +1,7 @@
 module Api
   class IpsController < ApplicationController
+    protect_from_forgery with: :null_session
+
     def index
       ip_addresses = IpAddress.all
       render json: ip_addresses
